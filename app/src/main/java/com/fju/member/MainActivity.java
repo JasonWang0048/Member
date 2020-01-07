@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         edOp3 = findViewById(R.id.output3);
         pref = getSharedPreferences("exam", MODE_PRIVATE);
         Log.d(TAG, "" + pref.contains("exam"));
-        if (!pref.contains("exam")) {
+        if (!pref.contains("NICKNAME") && !pref.contains("AGE") && !pref.contains("GENDER")) {
             Intent intent = new Intent();
             intent.setClass(MainActivity.this, NicknameActivity.class);
             startActivity(intent);
