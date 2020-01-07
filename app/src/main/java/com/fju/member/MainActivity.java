@@ -31,4 +31,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    public void finish() {
+        String nickname = pref.getString("NICKNAME", "Data not found");
+        String age = pref.getString("AGE", null);
+        String gender = pref.getString("GENDER", "Data not found");
+    }
 }
