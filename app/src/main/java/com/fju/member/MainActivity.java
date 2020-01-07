@@ -35,5 +35,8 @@ public class MainActivity extends AppCompatActivity {
         String nickname = pref.getString("NICKNAME", "Data not found");
         String age = pref.getString("AGE", null);
         String gender = pref.getString("GENDER", "Data not found");
+        edOp1.setText(nickname);
+        edOp2.setText(age);
+        edOp3.setText(gender);
     }
 }
